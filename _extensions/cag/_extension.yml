@@ -1,0 +1,21 @@
+title: CaG format template
+author: Stephen J. Price
+version: 0.0.1
+quarto-required: ">=1.2.0"
+contributes:
+  formats:
+    html:
+      embed-resources: true
+      title-block-banner: true
+      title-block-banner-color: "#000000"
+      toc: true
+      theme:
+        light: [flatly, cag.scss]
+        dark: [darkly, cag.scss]
+      knitr:
+        opts_chunk:
+          echo: false
+      date: today
+      date-format: "D MMMM YYYY"
+      published-title: "Updated"
+      df-print: paged

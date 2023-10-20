@@ -1,0 +1,17 @@
+/*-- scss:defaults --*/
+
+/* TODO: Customize html appearance by setting SCSS variables */
+/* See https://quarto.org/docs/output-formats/html-themes.html#theme-options */
+
+.quarto-title-block .quarto-title-banner {
+  background-image: url(logos/cag_colour_96dpi.png);
+  background-size: 150px;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding-right: 70px;
+  background-origin: content-box;
+  background-color: #FFA300;
+}
+
+/*-- scss:rules --*/
+

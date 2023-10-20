@@ -1,0 +1,59 @@
+---
+title: C&G template report
+format:
+  cag-html: default
+author: Stephen J. Price
+---
+
+## Introduction
+
+These files provide a report template that, together with the `cgplot` package, generate consistent, recognisable and stylish analytical reports with some City & Guilds branding. The template relies on Quarto, Bootstrap and a little custom CSS.
+
+Quarto uses markdown plain text mark up in combination with code chunks (multiple programming language options) and the outputs they generate to produce documents, presentations and websites. It builds on familar functionality of RMarkdown.
+
+## Light vs dark
+
+This template offers a choice of light or dark mode to the end-user via a toggle in the top-right corner of the rendered html document.
+
+## Callout blocks
+
+These are a fantastic feature of quarto docs. Read about them on the [quarto website](Quarto%20-%20Callout%20Blocks) where the following examples are copied from.
+
+::: callout-note
+Note that there are five types of callouts, including: \`note\`, \`warning\`, \`important\`, \`tip\`, and \`caution\`.
+:::
+
+::: callout-tip
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true"}
+## Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use \`collapse="true"\` to collapse it by default or \`collapse="false"\` to make a collapsible callout that is expanded by default.
+:::
+
+## Code annotation
+
+[Code annotation](https://quarto.org/docs/authoring/code-annotation.html) is also really neat in Quarto.
+
+```{r}
+#| echo: true
+library(dplyr, warn.conflicts = FALSE) 
+library(palmerpenguins) 
+
+penguins |> # <1> 
+  mutate( # <2> 
+    bill_ratio = bill_depth_mm / bill_length_mm, # <2> 
+    bill_area = bill_depth_mm * bill_length_mm # <2> 
+    ) # <2> 
+```
+
+1.  Take `penguins`, and then,
+2.  add new columns for the bill ratio and bill area.
+
+## More Information
+
+You can learn more about controlling the appearance of HTML output here: <https://quarto.org/docs/output-formats/html-basics.html>
