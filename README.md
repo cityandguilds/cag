@@ -1,17 +1,19 @@
 # City & Guilds HTML Report Format
 
+The purpose of this Quarto extension is to provide a universal style with company branding for html reports.
+
+The template includes the City & Guilds logo, a brand palette and a toggle allowing readers to select dark mode.
+
 ## Installing
 
 Run the following from a terminal and withinyour project directory.
 
 ``` bash
-quarto use template lizardburns/cag
+quarto use template cityandguilds/cag
 ```
 
-You will be asked whether you trust the source and then to give a name for the downloaded folder (e.g. "extensions").
+You will be asked whether you trust the source and then to give a name for the folder where the extension will be installed (e.g. "my_report").
 
-This will install the extension and create an example qmd file that you can use as a starting place for your article.
+This will install the extension and create an example qmd file that you can use as a starting point for your article.
 
-## Example
-
-Here is the source code for a minimal sample document: template.qmd.
+You will want to add '_extensions/' and 'logos/' to your .gitignore.
