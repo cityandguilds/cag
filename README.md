@@ -9,7 +9,7 @@ The template includes the City & Guilds logo, a brand palette and a toggle allow
 Run the following from a terminal and withinyour project directory.
 
 ``` bash
-quarto use template cityandguilds/cag
+quarto use template cityandguilds/cag_quarto_template
 ```
 
 You will be asked whether you trust the source and then to give a name for the folder where the extension will be installed (e.g. "my_report").
