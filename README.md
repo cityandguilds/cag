@@ -17,3 +17,6 @@ You will be asked whether you trust the source and then to give a name for the f
 This will install the extension and create an example qmd file that you can use as a starting point for your article.
 
 You will want to add '_extensions/' and 'logos/' to your .gitignore.
+
+## Contributing
+This was very much a quick, first pass. Happy to consider tweaks and extensions via a pull request.
